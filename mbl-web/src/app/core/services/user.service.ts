@@ -18,7 +18,7 @@ export class UserService {
   }
 
   getUserById(id: number): Observable<User>{
-    const customUrl = `${this.apiUrl}/user/${id}`;
+    const customUrl = `${this.apiUrl}/users/${id}`;
     return this.http.get<User>(customUrl)
     .pipe(
       tap(_ => console.log(`fetched user id=${id}`)),

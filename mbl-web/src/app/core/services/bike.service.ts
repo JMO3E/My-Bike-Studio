@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment.development';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable, of} from 'rxjs';
-import { catchError, map, tap } from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
+import { Observable, of } from 'rxjs';
+import { catchError, tap } from 'rxjs/operators';
 import { Bike } from '../../shared/interface/bikeInterface';
 
 @Injectable({
@@ -21,12 +21,39 @@ export class BikeService {
     );
   }
 
-  getBikeById(id: number): Observable<Bike[]>{
-    const customUrl = `${this.apiUrl}/bike/${id}`;
-    return this.http.get<Bike[]>(customUrl)
+  getBikeById(id: number): Observable<Bike>{
+    const customUrl = `${this.apiUrl}/bikes/${id}`;
+    return this.http.get<Bike>(customUrl)
     .pipe(
-      tap(_ => console.log(`fetched bike id=${id}`)),
-      catchError(this.handleError<Bike[]>(`getBikeById id=${id}`))
+      tap(_ => console.log(`Get bike id=${id}`)),
+      catchError(this.handleError<Bike>(`getBikeById id=${id}`))
+    );
+  }
+
+  addBike(bike: Bike): Observable<Bike>{
+    const customUrl = `${this.apiUrl}/bikes/add`;
+    return this.http.post<Bike>(customUrl, bike)
+    .pipe(
+      tap(_ => console.log(`Adding new Bike`)),
+      catchError(this.handleError<Bike>(`Adding new Bike`))
+    );
+  }
+
+  updateBike(bike: Bike, id: number): Observable<Bike>{
+    const customUrl = `${this.apiUrl}/bikes/update/${id}`;
+    return this.http.put<Bike>(customUrl, bike)
+    .pipe(
+      tap(_ => console.log(`Update bike id=${id}`)),
+      catchError(this.handleError<Bike>(`updateBike id=${id}`))
+    );
+  }
+
+  deleteBike(id: number): Observable<unknown>{
+    const customUrl = `${this.apiUrl}/bikes/delete/${id}`;
+    return this.http.delete(customUrl)
+    .pipe(
+      tap(_ => console.log(`Delete bike id=${id}`)),
+      catchError(this.handleError<Bike>(`Delete bike id=${id}`))
     );
   }
 

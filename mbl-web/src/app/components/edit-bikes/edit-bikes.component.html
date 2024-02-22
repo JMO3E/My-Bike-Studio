@@ -3,23 +3,28 @@
     <h2 class="text-center">Edit Bike</h2>
   </div>
   <div class="container form-container mt-3 bg-primary">
-    <form class="row row-cols-1 g-1">
+    <div class="row row-cols-1 g-1">
       <div class="form-group my-2">
-        <label for="exampleInputEmail1" class="text-light mb-1">Brand</label>
-        <input type="brand" class="form-control" id="exampleInputEmail1" placeholder="Enter brand">
+        <label for="brand" class="text-light mb-1">Brand</label>
+        <input id="brand" type="text" class="form-control" [(ngModel)]="bikeForm.value.brand" placeholder={{bike.brand}}>
       </div>
       <div class="form-group my-2">
-        <label for="exampleFormControlTextarea1" class="text-light mb-1">Description</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <label for="description" class="text-light mb-1">Description</label>
+        <textarea id="description" type="text" class="form-control" [(ngModel)]="bikeForm.value.description" rows="3" placeholder={{bike.description}}></textarea>
       </div>
       <div class="form-group my-2 row row-cols-1 g-1 text-light">
-        <label for="exampleFormControlFile1" class="mb-1">Bike Image</label>
-        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        <label for="imagelink" class="mb-1">Bike Image</label>
+        <input id="imagelink" type="text" class="form-control" [(ngModel)]="bikeForm.value.imagelink" placeholder={{bike.imagelink}}>
+      </div>
+      <div class="form-group my-2 row row-cols-1 g-1 text-light">
+        <label class="checkbox mb-1">
+          <input id="deleteBike" type="checkbox" (change)="setCheckbox()">
+          Do you want to delete this bike?
+        </label>
       </div>
       <div class="button-container d-flex justify-content-evenly">
-        <button type="submit" class="btn btn-success my-2">Submit</button>
-        <button type="submit" class="btn btn-danger my-2">Delete</button>
+        <button If="bike.id" (click)="updateBike(bikeForm)" class="btn btn-success my-2">Submit</button>
       </div>
-    </form>
+    </div>
   </div>
 </section>

@@ -18,7 +18,7 @@ import com.mbl.mblapi.service.UserService;
 import java.util.List;
 import org.springframework.web.bind.annotation.RequestParam;
 
-
+@CrossOrigin(origins = "http://localhost:4200/")
 @RestController
 @RequestMapping("api/")
 public class UserController {

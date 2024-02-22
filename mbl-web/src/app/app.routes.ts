@@ -17,7 +17,7 @@ export const routes: Routes = [
     component: AddBikesComponent
   },
   {
-    path: 'edit-bike',
+    path: 'edit-bike/:id',
     component: EditBikesComponent
   },
   {
