@@ -1,4 +1,4 @@
-# My Bike List Website
+# My Bike List
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This project is focus on building a REST API website to practice and learn new technologies.
 
