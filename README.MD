@@ -1,6 +1,6 @@
 # My Bike Studio
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a REST API project using Angular, Spring Boot and MySQL. The purposes of building this project were to practice and learn new technologies.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a REST API based application designed to store information about your favorite bikes. The project utilizes Angular, Spring Boot, and MySQL. Its primary objectives are to practice and learn new technologies.
 
 ## Description
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The first steps in the development of the projects were to setup the the Spring Boot environment in my pc. Afterward, I start creating the Model, Implementation, Service and Controller files. Then, I had to setup the Database in MySQL and create the table. When finish with the DB, I started testing the HTTP calls. The test was succesful so I started with the development of the client side by setting up the Angular environment and then started building the Model, Interface, Service and Components. Finally, I finished the project with every functionality working correctly.
