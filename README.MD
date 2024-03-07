@@ -1,4 +1,4 @@
-# My Bike List
+# My Bike Studio
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a REST API project using Angular, Spring Boot and MySQL. The purposes of building this project were to practice and learn new technologies.
 
