@@ -13,8 +13,21 @@
 * API Testing - [Postman](https://www.postman.com/)
 * CSS Framework - [Bulma](https://bulma.io/)
 
+## UI
+<img alt="WBS Main" width="600px" src="./mbl-web/src/assets/images/wbs-main.png">
+
+<br>
+
+<img alt="WBS Add" width="600px" src="./mbl-web/src/assets/images/wbs-add.png">
+
+<br>
+
+<img alt="WBS Edit" width="600px" src="./mbl-web/src/assets/images/wbs-edit.png">
+
+<br>
+
 ## Architecture
-<img alt="WBL Architecture" width="600px" src="./mbl-web/src/assets/images/WBL_Architecture.png">
+<img alt="WBS Architecture" width="600px" src="./mbl-web/src/assets/images/WBL_Architecture.png">
 
 ## Angular Code
 
