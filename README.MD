@@ -14,15 +14,15 @@
 * CSS Framework - [Bulma](https://bulma.io/)
 
 ## UI
-<img alt="MBS Main" width="600px" src="./mbl-web/src/assets/images/mbs-main.png">
+<img alt="MBS Main" width="600px" src="./mbl-web/src/assets/images/mbs-main.PNG">
 
 <br>
 
-<img alt="MBS Add" width="600px" src="./mbl-web/src/assets/images/mbs-add.png">
+<img alt="MBS Add" width="600px" src="./mbl-web/src/assets/images/mbs-add.PNG">
 
 <br>
 
-<img alt="MBS Edit" width="600px" src="./mbl-web/src/assets/images/mbs-edit.png">
+<img alt="MBS Edit" width="600px" src="./mbl-web/src/assets/images/mbs-edit.PNG">
 
 ## Architecture
 <img alt="MBS Architecture" width="600px" src="./mbl-web/src/assets/images/WBL_Architecture.png">
