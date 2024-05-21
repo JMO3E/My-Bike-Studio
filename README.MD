@@ -14,20 +14,18 @@
 * CSS Framework - [Bulma](https://bulma.io/)
 
 ## UI
-<img alt="WBS Main" width="600px" src="./mbl-web/src/assets/images/wbs-main.png">
+<img alt="MBS Main" width="600px" src="./mbl-web/src/assets/images/mbs-main.png">
 
 <br>
 
-<img alt="WBS Add" width="600px" src="./mbl-web/src/assets/images/wbs-add.png">
+<img alt="MBS Add" width="600px" src="./mbl-web/src/assets/images/mbs-add.png">
 
 <br>
 
-<img alt="WBS Edit" width="600px" src="./mbl-web/src/assets/images/wbs-edit.png">
-
-<br>
+<img alt="MBS Edit" width="600px" src="./mbl-web/src/assets/images/mbs-edit.png">
 
 ## Architecture
-<img alt="WBS Architecture" width="600px" src="./mbl-web/src/assets/images/WBL_Architecture.png">
+<img alt="MBS Architecture" width="600px" src="./mbl-web/src/assets/images/WBL_Architecture.png">
 
 ## Angular Code
 
